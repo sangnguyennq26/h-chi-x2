@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="100%" height="100%" fill="none">
+  <defs>
+    <!-- Map Gradients -->
+    <radialGradient id="mountainShade" cx="48%" cy="45%" r="48%">
+      <stop offset="0%" stop-color="#2D5A47" stop-opacity="0.95"/>
+      <stop offset="40%" stop-color="#203A2F" stop-opacity="0.98"/>
+      <stop offset="70%" stop-color="#182C24" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#12201A" stop-opacity="1"/>
+    </radialGradient>
+    <linearGradient id="riverGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4B776E" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#2C4E46" stop-opacity="0.7"/>
+    </linearGradient>
+    <linearGradient id="goldPath" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F4E4B7"/>
+      <stop offset="50%" stop-color="#D5A437"/>
+      <stop offset="100%" stop-color="#B8860B"/>
+    </linearGradient>
+    <!-- Paper texture pattern overlay -->
+    <filter id="mapPaper" x="0%" y="0%" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.03" result="noise" numOctaves="3"/>
+      <feColorMatrix type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 0.07 0"/>
+      <feBlend in="SourceGraphic" in2="noise" mode="multiply"/>
+    </filter>
+  </defs>
+
+  <!-- Deep Sacred Forest Map Canvas -->
+  <rect width="1200" height="800" fill="url(#mountainShade)"/>
+
+  <!-- Topographic Contour Lines (Nghĩa Lĩnh, Núi Vặn, Núi Sim) -->
+  <g stroke="#D5A437" stroke-opacity="0.12" stroke-width="1.2" fill="none">
+    <!-- Nghĩa Lĩnh Mountain Contours (Center Summit) -->
+    <path d="M 320,620 C 360,540 400,420 540,320 C 660,230 760,260 860,370 C 920,440 940,550 880,640 Z"/>
+    <path d="M 370,580 C 420,490 460,380 560,290 C 660,210 740,230 820,330 C 870,390 890,490 840,590 Z"/>
+    <path d="M 430,530 C 470,440 500,340 580,260 C 660,190 720,210 780,290 C 820,350 840,440 790,540 Z"/>
+    <path d="M 490,470 C 530,390 560,300 610,230 C 670,170 710,180 750,250 C 780,310 790,390 740,480 Z"/>
+    <!-- Summit Ring (Đền Thượng & Lăng) -->
+    <ellipse cx="640" cy="230" rx="90" ry="50" stroke-width="2" stroke-opacity="0.25" stroke-dasharray="6 4"/>
+    <ellipse cx="640" cy="230" rx="50" ry="28" stroke-width="2.5" stroke-opacity="0.35"/>
+
+    <!-- Núi Vặn Contours (West - Đền Mẫu Âu Cơ) -->
+    <path d="M 120,520 C 140,430 180,360 250,330 C 320,300 370,340 380,430 C 390,510 320,590 220,600 Z"/>
+    <ellipse cx="260" cy="420" rx="70" ry="45" stroke-opacity="0.2"/>
+
+    <!-- Núi Sim Contours (South - Đền Lạc Long Quân) -->
+    <path d="M 760,650 C 800,560 880,520 980,540 C 1080,560 1120,640 1080,720 C 1040,780 940,790 840,760 Z"/>
+    <ellipse cx="960" cy="640" rx="80" ry="50" stroke-opacity="0.2"/>
+  </g>
+
+  <!-- Sacred Waters / Lakes -->
+  <!-- Hồ Gò Thờ & Hồ Đền Hùng -->
+  <path d="M 480,710 C 530,680 620,690 660,730 C 680,760 650,790 570,790 C 500,790 450,750 480,710 Z" fill="url(#riverGrad)" stroke="#4B776E" stroke-width="1.5"/>
+  <path d="M 880,480 C 930,460 970,490 960,530 C 940,560 890,560 870,530 C 850,500 860,490 880,480 Z" fill="url(#riverGrad)" stroke="#4B776E" stroke-width="1.5"/>
+  
+  <!-- Sacred Trail / Pilgrim Path (Stone Steps Line) -->
+  <g stroke="url(#goldPath)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- Cổng Đền (580,720) -> Đền Hạ (580,590) -->
+    <path d="M 580,720 Q 575,650 580,590" stroke-dasharray="7 5"/>
+    <!-- Đền Hạ -> Chùa Thiên Quang (630,560) -->
+    <path d="M 580,590 Q 610,580 635,560" stroke-dasharray="7 5"/>
+    <!-- Chùa Thiên Quang -> Đền Trung (605,430) -->
+    <path d="M 635,560 Q 610,490 605,430" stroke-dasharray="7 5"/>
+    <!-- Đền Trung -> Đền Thượng (640,240) -->
+    <path d="M 605,430 Q 615,330 640,240" stroke-dasharray="7 5"/>
+    <!-- Đền Thượng -> Lăng Hùng Vương (690,210) -->
+    <path d="M 640,240 Q 665,220 690,210" stroke-dasharray="7 5"/>
+    <!-- Đền Thượng -> Đền Giếng (740,490) (Downhill East Trail) -->
+    <path d="M 640,240 Q 720,330 740,490" stroke-dasharray="7 5"/>
+    <!-- Route to Núi Vặn (Đền Mẫu Âu Cơ: 260,420) -->
+    <path d="M 580,720 Q 400,680 260,420" stroke="#D5A437" stroke-width="2" stroke-opacity="0.6" stroke-dasharray="4 6"/>
+    <!-- Route to Núi Sim (Đền Lạc Long Quân: 960,640) -->
+    <path d="M 580,720 Q 780,740 960,640" stroke="#D5A437" stroke-width="2" stroke-opacity="0.6" stroke-dasharray="4 6"/>
+  </g>
+
+  <!-- Ancient Trees & Forest Canopy Marks -->
+  <g fill="#2D5A47" opacity="0.6">
+    <circle cx="530" cy="540" r="14"/>
+    <circle cx="550" cy="530" r="18"/>
+    <circle cx="680" cy="460" r="16"/>
+    <circle cx="710" cy="470" r="20"/>
+    <circle cx="610" cy="300" r="15"/>
+    <circle cx="670" cy="310" r="19"/>
+    <circle cx="210" cy="450" r="18"/>
+    <circle cx="310" cy="390" r="16"/>
+    <circle cx="910" cy="600" r="18"/>
+    <circle cx="1020" cy="660" r="22"/>
+  </g>
+
+  <!-- Compass Rose in Ancient Style -->
+  <g transform="translate(1100, 110)" stroke="#D5A437" fill="#D5A437">
+    <circle cx="0" cy="0" r="45" stroke-width="1.5" stroke-opacity="0.4" fill="none"/>
+    <circle cx="0" cy="0" r="40" stroke-width="1" stroke-dasharray="3 3" stroke-opacity="0.6" fill="none"/>
+    <polygon points="0,-36 7,-10 0,0 -7,-10" fill="#D5A437"/>
+    <polygon points="0,36 7,10 0,0 -7,10" fill="#F4E4B7" opacity="0.5"/>
+    <polygon points="36,0 10,7 0,0 10,-7" fill="#F4E4B7" opacity="0.5"/>
+    <polygon points="-36,0 -10,7 0,0 -10,-7" fill="#F4E4B7" opacity="0.5"/>
+    <text x="0" y="-42" font-family="'Cinzel', 'Noto Serif', serif" font-size="12" font-weight="900" text-anchor="middle" fill="#F4E4B7">BẮC</text>
+  </g>
+
+  <!-- Elevation Legend -->
+  <g transform="translate(60, 720)" fill="#F4E4B7" opacity="0.85">
+    <rect x="-10" y="-30" width="220" height="70" rx="8" fill="#182C24" stroke="#D5A437" stroke-width="1" stroke-opacity="0.4"/>
+    <text x="0" y="-12" font-family="'Be Vietnam Pro', sans-serif" font-size="11" font-weight="700" fill="#D5A437">ĐỊA HÌNH NÚI NGHĨA LĨNH</text>
+    <circle cx="10" cy="12" r="5" fill="#9D1C20"/>
+    <text x="24" y="16" font-family="'Be Vietnam Pro', sans-serif" font-size="10">Đỉnh núi: 175m so với mực nước biển</text>
+  </g>
+</svg>

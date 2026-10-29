@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="800" height="800" fill="none">
+  <!-- Dong Son Bronze Drum Pattern -->
+  <defs>
+    <radialGradient id="drumGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#D5A437" stop-opacity="0.35"/>
+      <stop offset="60%" stop-color="#9D1C20" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#701419" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  
+  <rect width="800" height="800" fill="url(#drumGlow)"/>
+
+  <!-- Outer Ring 1: Serrated edge -->
+  <circle cx="400" cy="400" r="380" stroke="#D5A437" stroke-width="2" stroke-opacity="0.4"/>
+  <circle cx="400" cy="400" r="372" stroke="#D5A437" stroke-width="1.5" stroke-dasharray="4 4" stroke-opacity="0.5"/>
+  <circle cx="400" cy="400" r="360" stroke="#D5A437" stroke-width="3" stroke-opacity="0.6"/>
+
+  <!-- Ring 2: Flying Chim Lac Birds (14 birds counter-clockwise) -->
+  <circle cx="400" cy="400" r="310" stroke="#D5A437" stroke-width="1" stroke-opacity="0.3"/>
+  <g id="chim-lac-ring" stroke="#D5A437" fill="#D5A437" fill-opacity="0.4" stroke-width="1.5">
+    <!-- Repeating Chim Lac around circle -->
+    <g transform="translate(400,400)">
+      <!-- 8 bird instances around the ring -->
+      <path d="M 0,-335 C 20,-345 50,-340 70,-325 C 50,-328 25,-325 10,-315 C 2,-310 -5,-310 -15,-320 Z M 15,-325 L 35,-310 L 15,-315 Z" />
+      <g transform="rotate(45)"><path d="M 0,-335 C 20,-345 50,-340 70,-325 C 50,-328 25,-325 10,-315 C 2,-310 -5,-310 -15,-320 Z M 15,-325 L 35,-310 L 15,-315 Z" /></g>
+      <g transform="rotate(90)"><path d="M 0,-335 C 20,-345 50,-340 70,-325 C 50,-328 25,-325 10,-315 C 2,-310 -5,-310 -15,-320 Z M 15,-325 L 35,-310 L 15,-315 Z" /></g>
+      <g transform="rotate(135)"><path d="M 0,-335 C 20,-345 50,-340 70,-325 C 50,-328 25,-325 10,-315 C 2,-310 -5,-310 -15,-320 Z M 15,-325 L 35,-310 L 15,-315 Z" /></g>
+      <g transform="rotate(180)"><path d="M 0,-335 C 20,-345 50,-340 70,-325 C 50,-328 25,-325 10,-315 C 2,-310 -5,-310 -15,-320 Z M 15,-325 L 35,-310 L 15,-315 Z" /></g>
+      <g transform="rotate(225)"><path d="M 0,-335 C 20,-345 50,-340 70,-325 C 50,-328 25,-325 10,-315 C 2,-310 -5,-310 -15,-320 Z M 15,-325 L 35,-310 L 15,-315 Z" /></g>
+      <g transform="rotate(270)"><path d="M 0,-335 C 20,-345 50,-340 70,-325 C 50,-328 25,-325 10,-315 C 2,-310 -5,-310 -15,-320 Z M 15,-325 L 35,-310 L 15,-315 Z" /></g>
+      <g transform="rotate(315)"><path d="M 0,-335 C 20,-345 50,-340 70,-325 C 50,-328 25,-325 10,-315 C 2,-310 -5,-310 -15,-320 Z M 15,-325 L 35,-310 L 15,-315 Z" /></g>
+    </g>
+  </g>
+
+  <!-- Ring 3: Concentric Geometric Dots and Tangent lines -->
+  <circle cx="400" cy="400" r="270" stroke="#D5A437" stroke-width="2" stroke-opacity="0.5"/>
+  <circle cx="400" cy="400" r="260" stroke="#D5A437" stroke-width="1.5" stroke-dasharray="6 6" stroke-opacity="0.4"/>
+  <circle cx="400" cy="400" r="250" stroke="#D5A437" stroke-width="2" stroke-opacity="0.5"/>
+
+  <!-- Ring 4: Human and deer/animal stylized bands -->
+  <circle cx="400" cy="400" r="200" stroke="#D5A437" stroke-width="2" stroke-opacity="0.6"/>
+  <circle cx="400" cy="400" r="190" stroke="#D5A437" stroke-width="1" stroke-dasharray="3 3" stroke-opacity="0.5"/>
+
+  <!-- Center Sun: 14-pointed star of Ngoc Lu / Dong Son bronze drum -->
+  <g transform="translate(400,400)" fill="#D5A437" fill-opacity="0.65" stroke="#9D1C20" stroke-width="1">
+    <!-- 14 rays -->
+    <polygon points="0,-140 15,-50 -15,-50" />
+    <polygon points="0,-140 15,-50 -15,-50" transform="rotate(25.71)" />
+    <polygon points="0,-140 15,-50 -15,-50" transform="rotate(51.42)" />
+    <polygon points="0,-140 15,-50 -15,-50" transform="rotate(77.14)" />
+    <polygon points="0,-140 15,-50 -15,-50" transform="rotate(102.85)" />
+    <polygon points="0,-140 15,-50 -15,-50" transform="rotate(128.57)" />
+    <polygon points="0,-140 15,-50 -15,-50" transform="rotate(154.28)" />
+    <polygon points="0,-140 15,-50 -15,-50" transform="rotate(180)" />
+    <polygon points="0,-140 15,-50 -15,-50" transform="rotate(205.71)" />
+    <polygon points="0,-140 15,-50 -15,-50" transform="rotate(231.42)" />
+    <polygon points="0,-140 15,-50 -15,-50" transform="rotate(257.14)" />
+    <polygon points="0,-140 15,-50 -15,-50" transform="rotate(282.85)" />
+    <polygon points="0,-140 15,-50 -15,-50" transform="rotate(308.57)" />
+    <polygon points="0,-140 15,-50 -15,-50" transform="rotate(334.28)" />
+    
+    <!-- Central hub -->
+    <circle cx="0" cy="0" r="45" fill="#701419" stroke="#D5A437" stroke-width="2"/>
+    <circle cx="0" cy="0" r="28" fill="#D5A437" fill-opacity="0.8"/>
+    <circle cx="0" cy="0" r="12" fill="#701419"/>
+  </g>
+</svg>

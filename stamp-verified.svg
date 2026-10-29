@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" fill="none">
+  <!-- Dấu Son: ĐÃ KHÁM PHÁ - ĐỀN HÙNG -->
+  <defs>
+    <filter id="stampRoughness" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="3" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="3" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#stampRoughness)" stroke="#9D1C20" fill="#9D1C20">
+    <!-- Double Outer Border -->
+    <circle cx="100" cy="100" r="92" stroke="#9D1C20" stroke-width="4.5" fill="none"/>
+    <circle cx="100" cy="100" r="83" stroke="#9D1C20" stroke-width="2" fill="none" stroke-dasharray="8 4"/>
+    <circle cx="100" cy="100" r="77" stroke="#9D1C20" stroke-width="1.5" fill="none"/>
+
+    <!-- Circular Top & Bottom Text -->
+    <path id="circleTextTop" d="M 30,100 A 70,70 0 0,1 170,100" fill="none"/>
+    <path id="circleTextBottom" d="M 170,100 A 70,70 0 0,1 30,100" fill="none"/>
+
+    <text font-family="'Be Vietnam Pro', 'Arial', sans-serif" font-size="11" font-weight="900" letter-spacing="3" fill="#9D1C20">
+      <textPath href="#circleTextTop" startOffset="50%" text-anchor="middle">
+        HỘ CHIẾU CỘI NGUỒN
+      </textPath>
+    </text>
+
+    <text font-family="'Be Vietnam Pro', 'Arial', sans-serif" font-size="9.5" font-weight="800" letter-spacing="2.5" fill="#9D1C20">
+      <textPath href="#circleTextBottom" startOffset="50%" text-anchor="middle">
+        ★ ĐỀN HÙNG - PHÚ THỌ ★
+      </textPath>
+    </text>
+
+    <!-- Center Icon: Dong Son Sun & Chim Lac -->
+    <circle cx="100" cy="100" r="48" stroke="#9D1C20" stroke-width="1.5" fill="none"/>
+    
+    <!-- Sun rays -->
+    <g transform="translate(100,100) scale(0.25)" fill="#9D1C20">
+      <polygon points="0,-60 12,-20 -12,-20"/>
+      <polygon points="0,-60 12,-20 -12,-20" transform="rotate(45)"/>
+      <polygon points="0,-60 12,-20 -12,-20" transform="rotate(90)"/>
+      <polygon points="0,-60 12,-20 -12,-20" transform="rotate(135)"/>
+      <polygon points="0,-60 12,-20 -12,-20" transform="rotate(180)"/>
+      <polygon points="0,-60 12,-20 -12,-20" transform="rotate(225)"/>
+      <polygon points="0,-60 12,-20 -12,-20" transform="rotate(270)"/>
+      <polygon points="0,-60 12,-20 -12,-20" transform="rotate(315)"/>
+    </g>
+
+    <!-- Center text stamp -->
+    <rect x="42" y="90" width="116" height="24" rx="3" fill="#9D1C20" stroke="#9D1C20" stroke-width="2"/>
+    <text x="100" y="107" font-family="'Be Vietnam Pro', sans-serif" font-size="13" font-weight="900" fill="#FFF" text-anchor="middle" letter-spacing="2">
+      ĐÃ KHÁM PHÁ
+    </text>
+
+    <text x="100" y="128" font-family="'Courier New', monospace" font-size="9" font-weight="bold" fill="#9D1C20" text-anchor="middle" letter-spacing="1">
+      VERIFIED • NGHĨA LĨNH
+    </text>
+  </g>
+</svg>
